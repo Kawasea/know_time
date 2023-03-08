@@ -205,7 +205,7 @@ with st.expander('④ 計測する'):
             result_dh_h = str(results[i] % 24)
             result_h = str(results[i])
             st.write('■ ' + st.session_state.categories[i] + '：' +
-                     result_dh_d + '日 + ' + result_dh_h + '時間［ ' + result_h + '時間 ］')
+                     result_dh_d + '日 と ' + result_dh_h + '時間［ ' + result_h + '時間 ］')
         if accumulate_h != total_days * 24:
             not_set_h = total_days * 24 - accumulate_h
             result_dh_d = str(not_set_h // 24)
@@ -213,5 +213,5 @@ with st.expander('④ 計測する'):
             result_h = str(not_set_h)
 
             st.write('■ ' + reserve_items[0] + '：' +
-                     result_dh_d + '日 + ' + result_dh_h + '時間［ ' + result_h + '時間 ］')
+                     result_dh_d + '日 と ' + result_dh_h + '時間［ ' + result_h + '時間 ］')
 # -------------------
